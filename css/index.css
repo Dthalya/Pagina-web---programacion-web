@@ -1,0 +1,133 @@
+/* Estilos para el contenido principal */
+#menu_contenido {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Contenedor de imágenes en columnas */
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 48%; /* Asegura que las dos imágenes ocupen la mitad del contenedor */
+    text-align: center;
+}
+
+/* Ajustar tamaño uniforme de las imágenes */
+.image-item img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    max-width: 250px; /* Limita el ancho máximo */
+    height: 300px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para que ocupe todo el espacio sin distorsionarse */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.image-item strong {
+    font-size: 16px;
+    color: #c44b4f;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botón de compra */
+.btn-comprar {
+    padding: 10px 20px;
+    background-color: #c44b4f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-comprar:hover {
+    background-color: #a8363b;
+}
+
+/* Media Query para dispositivos con ancho máximo de 1024px */
+@media (max-width: 1024px) {
+    #menu_contenido {
+        padding: 30px 15px; /* Reduce ligeramente el padding */
+    }
+
+    .image-grid {
+        gap: 15px; /* Reduce el espacio entre los elementos */
+    }
+
+    .image-item {
+        max-width: 48%; /* Mantiene dos columnas pero con márgenes más cómodos */
+    }
+
+    .image-item img {
+        max-width: 200px; /* Reduce el tamaño máximo de las imágenes */
+        height: auto; /* Permite que la altura sea proporcional */
+    }
+
+    .btn-comprar {
+        padding: 9px 18px; /* Pequeño ajuste al tamaño del botón */
+        font-size: 15px; /* Reduce un poco el tamaño del texto */
+    }
+}
+
+
+/* Media Query para dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+    #menu_contenido {
+        padding: 20px 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .image-grid {
+        flex-direction: column; /* Apila las imágenes verticalmente */
+        gap: 10px; /* Reduce el espacio entre los elementos */
+    }
+
+    .image-item {
+        max-width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    }
+
+    .image-item img {
+        max-width: 200px; /* Reduce el tamaño máximo de las imágenes */
+        height: auto; /* Permite que la altura sea proporcional */
+    }
+
+    .btn-comprar {
+        padding: 8px 16px; /* Ajusta el tamaño del botón */
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+}
+
+/* Media Query para dispositivos con ancho máximo de 480px */
+@media (max-width: 480px) {
+    #menu_contenido {
+        padding: 15px 5px; /*Menos padding en dispositivos muy pequeños */
+    }
+
+    .image-item img {
+        max-width: 150px; /* Ajusta aún más el tamaño máximo de las imágenes */
+    }
+
+    .btn-comprar {
+        font-size: 12px; /* Ajusta el texto del botón para pantallas pequeñas */
+    }
+}

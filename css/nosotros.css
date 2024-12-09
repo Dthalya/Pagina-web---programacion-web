@@ -1,0 +1,147 @@
+/* Estilos para la sección principal */
+#sobre-nosotros {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Títulos y subtítulos */
+.seccion-titulo {
+    font-size: 2em;
+    color: #c44b4f;
+    margin-bottom: 20px;
+}
+
+.seccion-subtitulo {
+    font-size: 1.6em;
+    color: #c44b4f;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Texto de las secciones */
+.seccion-text {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Contenedor de video */
+.contenedor-video {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contenedor-video iframe {
+    width: 100%;
+    max-width: 460px;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Línea de separación */
+hr {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Media Query para dispositivos con ancho máximo de 1024px */
+@media (max-width: 1024px) {
+    #menu_contenido {
+        padding: 30px 15px; /* Reduce un poco el padding */
+    }
+
+    .image-grid {
+        gap: 15px; /* Reduce el espacio entre los elementos */
+    }
+
+    .image-item {
+        max-width: 48%; /* Mantiene dos columnas pero con márgenes más cómodos */
+    }
+
+    .image-item img {
+        max-width: 200px; /* Reduce el tamaño máximo de las imágenes */
+        height: auto; /* Permite que la altura sea proporcional */
+    }
+
+    .btn-comprar {
+        padding: 9px 18px; /* Pequeño ajuste al tamaño del botón */
+        font-size: 15px; /* Reduce lun poco el tamaño del texto */
+    }
+}
+
+@media (max-width: 1024px) {
+    #sobre-nosotros {
+        padding: 30px 15px; /* Reduce un poco el padding */
+    }
+
+    .contenedor-video iframe {
+        max-width: 400px; /* Reduce el ancho del video */
+        height: 230px; /* Reduce proporcionalmente la altura */
+    }
+
+    .seccion-titulo {
+        font-size: 1.8em; /* Reduce el tamaño del título */
+    }
+
+    .seccion-subtitulo {
+        font-size: 1.4em; /* Reduce el tamaño del subtítulo */
+    }
+
+    .seccion-text {
+        font-size: 1em; /* Ajusta el texto para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    #sobre-nosotros {
+        padding: 20px 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .contenedor-video iframe {
+        max-width: 300px; /* Reduce aún más el tamaño del video */
+        height: 180px; /* Ajusta proporcionalmente la altura */
+    }
+
+    .seccion-titulo {
+        font-size: 1.6em; /* Reduce más el tamaño del título */
+    }
+
+    .seccion-subtitulo {
+        font-size: 1.2em; /* Reduce el tamaño del subtítulo */
+    }
+
+    .seccion-text {
+        font-size: 0.9em; /* Ajusta el texto para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    #sobre-nosotros {
+        padding: 15px 5px; /* Aún menos padding en dispositivos muy pequeños */
+    }
+
+    .contenedor-video iframe {
+        max-width: 260px; /* Tamaño más pequeño para videos */
+        height: 150px;
+    }
+
+    .seccion-titulo {
+        font-size: 1.4em; /* Ajusta aún más el tamaño del título */
+    }
+
+    .seccion-subtitulo {
+        font-size: 1em; /* Más pequeño para subtítulos */
+    }
+
+    .seccion-text {
+        font-size: 0.85em; 
+    }
+}

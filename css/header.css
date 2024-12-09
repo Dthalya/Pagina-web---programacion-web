@@ -1,0 +1,96 @@
+/* Estilos para el header */
+#header {
+    background-color: #f7c6c7;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#titulo-principal {
+    font-size: 24px;
+    color: #c44b4f;
+    margin: 0;
+}
+
+#nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-list li {
+    margin: 0 15px;
+}
+
+#nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#nav-list a:hover {
+    color: #c44b4f;
+}
+
+
+@media (max-width: 1024px) {
+    #header {
+        padding: 10px 0; /* Reduce el padding */
+    }
+
+    #titulo-principal {
+        font-size: 22px; /* Reduce el tamaño del título */
+    }
+
+    #nav-list li {
+        margin: 0 10px; /* Reduce el espacio entre los enlaces */
+    }
+
+    #nav-list a {
+        font-size: 14px; /* Ajusta el tamaño del texto de los enlaces */
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        padding: 8px 0; 
+    }
+
+    #titulo-principal {
+        font-size: 20px; /* Título más pequeño */
+    }
+
+    #nav-list {
+        flex-direction: column; /* Coloca los elementos verticalmente */
+    }
+
+    #nav-list li {
+        margin: 5px 0; 
+    }
+
+    #nav-list a {
+        font-size: 14px; /* Mantiene el tamaño ajustado */
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        padding: 5px 0; /* Padding mínimo */
+    }
+
+    #titulo-principal {
+        font-size: 18px; 
+    }
+
+    #nav-list {
+        flex-direction: column; /* Mantiene el diseño vertical */
+    }
+
+    #nav-list li {
+        margin: 5px 0; 
+    }
+
+    #nav-list a {
+        font-size: 13px; 
+    }
+}

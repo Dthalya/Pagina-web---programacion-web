@@ -1,0 +1,61 @@
+/* Estilos para el footer */
+#footer {
+    background-color: #f7c6c7;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contacto-info {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+#footer-creditos {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+    #footer {
+        padding: 10px 0; /* Reduce un poco el padding */
+    }
+
+    #contacto-info {
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+
+    #footer-creditos {
+        font-size: 13px; /* Reduce el tamaño de los créditos */
+    }
+}
+
+@media (max-width: 768px) {
+    #footer {
+        padding: 8px 0; /* Reduce más el padding */
+    }
+
+    #contacto-info {
+        font-size: 15px; /* Ajusta el texto para pantallas pequeñas */
+    }
+
+    #footer-creditos {
+        font-size: 12px; /* Créditos más pequeños */
+    }
+}
+
+@media (max-width: 480px) {
+    #footer {
+        padding: 5px 0; /* Padding mínimo en móviles */
+    }
+
+    #contacto-info {
+        font-size: 14px; 
+    }
+
+    #footer-creditos {
+        font-size: 11px; 
+    }
+}

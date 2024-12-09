@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocaditos - Catálogo de Productos</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/catalogo.css">
+</head>
+<body>
+
+    <!-- Header con navegación -->
+    <header id="header">
+        <h1 id="titulo-principal">Bocaditos - Tienda de Galletas</h1>
+        <nav id="nav">
+            <ul id="nav-list">
+                <li><a id="link-inicio" href="index.html">Inicio</a></li>
+                <li><a id="link-catalogo" href="catalago.html">Catálogo de Productos</a></li>
+                <li><a id="link-nosotros" href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a id="link-pedido" href="pedido_pago.html">Pedido y Pago</a></li>
+                <li><a id="link-suscribete" href="suscribete.html">Suscríbete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección del Catálogo de productos -->
+    <main id="menu_contenido">
+        <h2>Catálogo de Productos</h2>
+    
+        <!-- Galletas Clásicas -->
+        <section class="categoria_producto">
+            <h3>Galletas Clásicas</h3>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="img/mantequilla.jpg" alt="Galletas de mantequilla">
+                    <strong>Galletas de Mantequilla - 2500 cop</strong>
+                    <p>Galleta recién horneada de 115gr de textura suave y sabor delicado, hechas con mantequilla pura.</p>
+                    <a href="pedido_pago.html?producto=galletas_mantequilla" class="btn-pedido">Hacer Pedido</a>
+                </div>
+                <div class="product-item">
+                    <img src="img/chocolate.jpg" alt="Cookies de chocolate">
+                    <strong>Galletas de Chocolate - 2500 cop</strong>
+                    <p>Galleta recién horneada de 115gr, crujiente por fuera y suaves por dentro, con trozos de chocolate amargo.</p>
+                    <a href="pedido_pago.html?producto=galletas_chocolate" class="btn-pedido">Hacer Pedido</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Galletas Saludables -->
+        <section class="categoria_producto">
+            <h3>Galletas Saludables</h3>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="img/sinazucar.jpg" alt="Galletas sin azúcar">
+                    <strong>Galletas sin Azúcar - 3000 cop</strong>
+                    <p>Galleta recién horneada de 115gr, endulzada con stevia o dátiles, sin azúcares añadidos.</p>
+                    <a href="pedido_pago.html?producto=galletas_sinazucar" class="btn-pedido">Hacer Pedido</a>
+                </div>
+                <div class="product-item">
+                    <img src="img/integral.jpg" alt="Galletas integrales">
+                    <strong>Galletas Integrales - 3000 cop</strong>
+                    <p>Galleta recién horneada de 115gr hecha con harinas integrales, perfectas para el desayuno.</p>
+                    <a href="pedido_pago.html?producto=galletas_integrales" class="btn-pedido">Hacer Pedido</a>
+                </div>
+                <div class="product-item">
+                    <img src="img/celiaco.jpg" alt="Galletas sin gluten">
+                    <strong>Galletas sin Gluten - 3000 cop</strong>
+                    <p>Galleta recién horneada de 115gr, apta para celíacos, con harinas alternativas de alta calidad.</p>
+                    <a href="pedido_pago.html?producto=galletas_singluten" class="btn-pedido">Hacer Pedido</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Especialidades Gourmet -->
+        <section class="categoria_producto">
+            <h3>Especialidades Gourmet</h3>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="img/chocoframbuesa.jpg" alt="Galletas de chocolate y frambuesa">
+                    <strong>Galletas de Chips y Frambuesas - 3500 cop</strong>
+                    <p>Galleta recién horneada de 115gr con chips de chocolate oscuro y frambuesa fresca.</p>
+                    <a href="pedido_pago.html?producto=galletas_frambuesa" class="btn-pedido">Hacer Pedido</a>
+                </div>
+                <div class="product-item">
+                    <img src="img/redvelvet.jpg" alt="Galletas red velvet y chocolate blanco">
+                    <strong>Galletas Red Velvet con Chocolate Blanco - 3500 cop</strong>
+                    <p>Galleta recién horneada de 155gr con el clásico color rojo del pastel Red Velvet. Tiene un toque de cacao y trozos de chocolate blanco.</p>
+                    <a href="pedido_pago.html?producto=galletas_redvelvet" class="btn-pedido">Hacer Pedido</a>
+                </div>
+                <div class="product-item">
+                    <img src="img/caramelo.jpg" alt="Galletas de caramelo salado">
+                    <strong>Galletas rellenas de Caramelo Salado - 3500 cop</strong>
+                    <p>Galleta recién horneada de 115gr rellena de caramelo salado y nueces.</p>
+                    <a href="pedido_pago.html?producto=galletas_caramelo" class="btn-pedido">Hacer Pedido</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <hr>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h4 id="contacto-info">Contáctanos al WhatsApp: 3125106916</h4>
+        <p id="footer-creditos">Desarrollado por: Darian Araque</p>
+    </footer>
+</body>
+</html>
